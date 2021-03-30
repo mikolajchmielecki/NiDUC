@@ -13,10 +13,4 @@ class Generator:
             Generator.buffor.append(random.randint(0, 1))
 
     def print_signal(self):
-            print(Generator.buffor)
-
-
-first = Generator()
-first.set_m()
-first.signal()
-first.print_signal()
+        print(Generator.buffor)
