@@ -1,4 +1,4 @@
-import random  # biblioteka od losowania liczb
+import random  # biblioteka do losowania liczb
 
 
 class Generator:
