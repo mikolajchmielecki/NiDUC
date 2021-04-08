@@ -67,12 +67,14 @@ def simulation(bits_number, probability):
     results.decoder = decoder.decode(results.channel)
     return results
 
+
 plot(10)
 plot(100)
 plot(1000)
 plot(10000)
 plot(12208)
 plot(100000)
-#print_results(5000, 0.8)
+
+print_results(50, 0.2)
 
 
