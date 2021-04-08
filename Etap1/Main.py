@@ -20,19 +20,24 @@ def differences_number(input: list, output: list):
 Tworzy wykres zależności liczby przekłamanych bitów od prawdopodobieństwa przekłamania
 """
 def plot(bits_number):
+
     differences_number_list = []
-    for i in np.arange(0, 1, 0.05):
+    for i in np.arange(0, 1.05, 0.05):
         results = simulation(bits_number, i)
         differences_number_list.append(differences_number(results.generator, results.decoder))
 
     # tworzenie wykresu
-    x = np.arange(0, 1, 0.05)
+    x = np.arange(0, 1.05, 0.05)
     y = differences_number_list
-    fig, ax = plt.subplots()
-    ax.plot(x, y, 'bo', x, y, 'k')
-    ax.set(xlabel='Prawdopodobieństwo przekłamania', ylabel='Liczba przekłamanych bitów',
-           title=f'Zależność liczby przekłamanych bitów od prawdopodobieństwa\nLiczba transmitowanych bitów: {bits_number}')
-    plt.show()
+    plt.xlabel('Prawdopodobieństwo przekłamania')
+    plt.ylabel('Liczba przekłamanych bitów')
+    plt.title(f'Zależność liczby przekłamanych bitów od prawdopodobieństwa\nLiczba transmitowanych bitów: {bits_number}')
+
+    plt.plot(x, y, 'bo', x, y, 'k')
+    plt.plot(((0, bits_number)), linestyle='dashed')
+    plt.savefig(str(bits_number) + ".png")
+    #plt.show()
+    plt.close()
 
 """
 Wyświetla wyniki symulacji w konsoli
@@ -62,7 +67,12 @@ def simulation(bits_number, probability):
     results.decoder = decoder.decode(results.channel)
     return results
 
+plot(10)
+plot(100)
 plot(1000)
-print_results(1000, 0.5)
+plot(10000)
+plot(12208)
+plot(100000)
+#print_results(5000, 0.8)
 
 
