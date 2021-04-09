@@ -10,7 +10,7 @@ class Decoder:
             suma = input_bits[i] + input_bits[i+1] + input_bits[i+2]
             # algorytm głosujący
             if suma < 2:
-                output.append(0);
+                output.append(0)
             else:
                 output.append(1)
         return output
