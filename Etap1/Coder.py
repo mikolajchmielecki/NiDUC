@@ -3,7 +3,7 @@
 """
 klasa Coder dziedziczy po klasie Generator
 """
-class Coder():
+class Coder:
 
 
     """

@@ -1,0 +1,22 @@
+Index: Etap1/Main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from Etap1 import *\r\nimport matplotlib.pyplot as plt\r\nimport numpy as np\r\n\r\n\"\"\"\r\nOblicza liczbę przekłamanych bitów\r\n\"\"\"\r\ndef differences_number(input: list, output: list):\r\n    suma = 0\r\n    for i in range(0, len(input)):\r\n        if input[i] != output[i]:\r\n            suma += 1\r\n    return suma\r\n\r\n\r\n#maksymalna długość datagramu TCP\r\n#generator = Generator.Generator(524280)\r\n\r\n\"\"\"\r\nTworzy wykres zależności liczby przekłamanych bitów od prawdopodobieństwa przekłamania\r\n\"\"\"\r\ndef plot(bits_number):\r\n\r\n    differences_number_list = []\r\n    for i in np.arange(0, 1.05, 0.05):\r\n        results = simulation(bits_number, i)\r\n        differences_number_list.append(differences_number(results.generator, results.decoder))\r\n\r\n    # tworzenie wykresu\r\n    x = np.arange(0, 1.05, 0.05)\r\n    y = differences_number_list\r\n    plt.gcf().subplots_adjust(left=0.15)\r\n    plt.xlabel('Prawdopodobieństwo przekłamania')\r\n    plt.ylabel('Liczba przekłamanych bitów')\r\n    plt.title(f'Zależność liczby przekłamanych bitów od prawdopodobieństwa\\nLiczba transmitowanych bitów: {bits_number}')\r\n\r\n    plt.plot(x, y, 'bo', x, y, 'k')\r\n    plt.plot(((0, bits_number)), linestyle='dashed')\r\n    plt.savefig(str(bits_number) + \".png\")\r\n    #plt.show()\r\n    plt.close()\r\n\r\n\"\"\"\r\nWyświetla wyniki symulacji w konsoli\r\n\"\"\"\r\ndef print_results(bits_number, probability):\r\n    results = simulation(bits_number, probability)\r\n    results.print_results()\r\n\r\n    print(f\"Liczba przekłamanych bitów: {differences_number(results.generator, results.decoder)}\")\r\n\r\n\"\"\"\r\nPrzeprowadza symulację i zwraca wyniki na poszczególnych jej etapach\r\n\"\"\"\r\ndef simulation(bits_number, probability):\r\n    results = Results.Results()\r\n    generator = Generator.Generator(bits_number)\r\n    generator.generate_signal()\r\n    results.generator = generator.signal\r\n\r\n    coder = Coder.Coder()\r\n    results.coder = coder.code(results.generator)\r\n\r\n    channel = Channel.Channel(probability)\r\n    results.channel = channel.get_output(results.coder)\r\n\r\n    decoder = Decoder.Decoder()\r\n    results.decoder = decoder.decode(results.channel)\r\n    return results\r\n\r\n\r\n#plot(10)\r\n#plot(100)\r\n#plot(1000)\r\n#plot(10000)\r\n#plot(12208)\r\nplot(100000)\r\n\r\n#print_results(50, 0.2)\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Etap1/Main.py	(revision a1ae4d93bc0088db9eba8d7cd4a150fa57189b9c)
++++ Etap1/Main.py	(date 1617974319665)
+@@ -74,8 +74,8 @@
+ #plot(1000)
+ #plot(10000)
+ #plot(12208)
+-plot(100000)
++#plot(100000)
+ 
+-#print_results(50, 0.2)
++print_results(50, 0.2)
+ 
+ 
+diff --git Etap2/Main.py Etap2/Main.py
+new file mode 100644

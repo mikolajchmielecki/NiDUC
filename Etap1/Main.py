@@ -29,6 +29,7 @@ def plot(bits_number):
     # tworzenie wykresu
     x = np.arange(0, 1.05, 0.05)
     y = differences_number_list
+    plt.gcf().subplots_adjust(left=0.15)
     plt.xlabel('Prawdopodobieństwo przekłamania')
     plt.ylabel('Liczba przekłamanych bitów')
     plt.title(f'Zależność liczby przekłamanych bitów od prawdopodobieństwa\nLiczba transmitowanych bitów: {bits_number}')
@@ -67,12 +68,14 @@ def simulation(bits_number, probability):
     results.decoder = decoder.decode(results.channel)
     return results
 
-plot(10)
-plot(100)
-plot(1000)
-plot(10000)
-plot(12208)
+
+#plot(10)
+#plot(100)
+#plot(1000)
+#plot(10000)
+#plot(12208)
 plot(100000)
-#print_results(5000, 0.8)
+
+#print_results(50, 0.2)
 
 
