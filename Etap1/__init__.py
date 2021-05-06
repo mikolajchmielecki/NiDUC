@@ -1,1 +1,1 @@
-__all__ = ["Generator", "Channel", "Coder", "Decoder", "Results"]
+__all__ = ["Generator", "Channel", "Coder", "Decoder", "Results", "Comparator"]

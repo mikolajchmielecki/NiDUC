@@ -1,16 +1,7 @@
 from Etap1 import *
 import matplotlib.pyplot as plt
 import numpy as np
-
-"""
-Oblicza liczbę przekłamanych bitów
-"""
-def differences_number(input: list, output: list):
-    suma = 0
-    for i in range(0, len(input)):
-        if input[i] != output[i]:
-            suma += 1
-    return suma
+from Etap1.Comparator import differences_number
 
 
 #maksymalna długość datagramu TCP
