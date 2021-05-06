@@ -55,13 +55,13 @@ console_info = False
 repeats = 20
 
 # zakres prawdopodobieństwa
-probability_range = np.arange(0.01, 0.15, 0.01)
+probability_range = np.arange(0.01, 0.16, 0.01)
 
 
 
 # porównanie BCH i potrajania
 m = 6
-t = 10
+t = 7
 ber_plot = Plot.Plot(f"Wykres BER - porównanie kodu BCH i potrajania", '', "BER", probability_range)
 e_plot = Plot.Plot(f"Wykres E - porównanie kodu BCH i potrajania", '', "E", probability_range)
 
