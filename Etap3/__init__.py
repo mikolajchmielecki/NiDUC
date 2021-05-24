@@ -1,1 +1,1 @@
-__all__ = ["Main", "BCHCoder", "TripleCoder", "ChannelGroup", "ChannelSingle", "Generator", "Simulation", "Window"]
+__all__ = ["Main", "BCHCoder", "TripleCoder", "ChannelGroup", "ChannelSingle", "Generator", "Simulation", "Window", "Logging"]

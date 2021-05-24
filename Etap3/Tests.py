@@ -8,9 +8,10 @@ class Tests:
     def run(self, msg):
         outputs = []
         for coder in self.coders:
+            print(f'[INFO] Testowany koder: {str(coder)} ...')
             simulation = Simulation(coder, self.channel)
             outputs.append(simulation.run(msg))
-            print(str(coder))
+
 
         return outputs
 

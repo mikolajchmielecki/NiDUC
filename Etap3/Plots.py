@@ -49,7 +49,9 @@ def plot_BER_E(results, channel, msg):
     try:
         fig.savefig('plot.png', bbox_inches='tight')
     except Exception:
-        print('[ERROR] Nie można zapisać wykresu')
+        # print('[ERROR] Nie można zapisać wykresu')
+        pass
+
 
     plt.show()
 

@@ -1,13 +1,16 @@
+
+from PyQt5.QtCore import QObject, QThread, pyqtSignal
 from Etap3.ChannelSingle import *
 from Etap3.ChannelGroup import *
 from Etap3.BCHCoder import *
+from Etap3.Threads import runLongTask
 from Etap3.TripleCoder import *
 from Etap3.Generator import *
 from Etap3.Simulation import *
 from Etap3.Tests import *
 from Etap3.Plots import *
-from tkinter import *
 from Etap3.Window import *
+from Etap3.Logging import *
 
 coders = []
 coders.append(TripleCoder(20, True))
@@ -34,10 +37,14 @@ coders.append(BCHCoder(6, 13))
 coders.append(BCHCoder(6, 15))
 
 
+
+
+
+
 """
 Uruchamia testy w zależności od wprowadzonych parametrów
 """
-def run(ui):
+def run(MainWindow, ui, logger):
     selected_coders = []
 
     # sprawdzenie wybranych checkboxów
@@ -60,25 +67,37 @@ def run(ui):
     if ui.group.isChecked():
         channel = ChannelGroup(ui.doubleSpinBox.value())
 
-
     tests = Tests(selected_coders, channel)
-    results = tests.run(msg)
-    plot_BER_E(results, channel, msg)
+    runLongTask(MainWindow, logger, msg, channel, tests)
+
+
+
+
+
 
 """
 Wyświetla okienko
 """
 if __name__ == "__main__":
     import sys
+
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
+    MainWindow.isBusy = False
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow, coders)
+    logger = Logger()
     def button_clicked():
-        run(ui)
+        logger.show()
+        run(MainWindow, ui, logger)
+
     ui.pushButton.clicked.connect(button_clicked)
     MainWindow.show()
+
     sys.exit(app.exec_())
+
+
 
 
 
