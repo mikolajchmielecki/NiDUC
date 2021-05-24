@@ -26,17 +26,23 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92c7f502-b881-4388-9b4a-6bb9cd171b8c" name="Default Changelist" comment="działający przykład przy użyciu libki 'komm'">
-      <change afterPath="$PROJECT_DIR$/Etap1/Comparator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Etap2/BCH_Parameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Etap2/Plot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Etap2/Simulation.py" afterDir="false" />
+    <list default="true" id="92c7f502-b881-4388-9b4a-6bb9cd171b8c" name="Default Changelist" comment="nowe wykresy 3">
+      <change afterPath="$PROJECT_DIR$/Etap3/BCHCoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/ChannelGroup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/ChannelSingle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/Plots.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/Simulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/Tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/TripleCoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/Window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Etap3/plot.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/window_kopia.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap1/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Etap1/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap1/Results.py" beforeDir="false" afterPath="$PROJECT_DIR$/Etap1/Results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap1/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Etap1/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap2/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Etap2/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Etap2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Etap2/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Etap1/Etap1.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,15 +71,85 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Etap2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Politechnika Wroclawska\Studia\Informatyka Technicza\IV semestr\Niezawodność i diagnostyka układów cyfrowych\NiDUC\Etap3" />
+      <recent name="D:\OneDrive - Politechnika Wroclawska\Studia\Informatyka Technicza\IV semestr\Niezawodność i diagnostyka układów cyfrowych\NiDUC" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\OneDrive - Politechnika Wroclawska\Studia\Informatyka Technicza\IV semestr\Niezawodność i diagnostyka układów cyfrowych\NiDUC" />
+      <recent name="D:\OneDrive - Politechnika Wroclawska\Studia\Informatyka Technicza\IV semestr\Niezawodność i diagnostyka układów cyfrowych\NiDUC\Etap3" />
       <recent name="D:\OneDrive - Politechnika Wroclawska\Studia\Informatyka Technicza\IV semestr\Niezawodność i diagnostyka układów cyfrowych\NiDUC\Etap2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main (2)">
-    <configuration name="Coder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Main (3)">
+    <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NiDUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Etap3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Etap3/GUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NiDUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Etap3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Etap3/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Plots" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NiDUC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Etap3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Etap3/Plots.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Window" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NiDUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -85,7 +161,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Coder.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Window.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,49 +170,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NiDUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Etap1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Etap1/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="NiDUC" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Etap2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Etap2/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="untitled" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="NiDUC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,7 +182,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\mikol\PycharmProjects\NiDUC\Etap1\Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/untitled.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,10 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main (2)" />
-        <item itemvalue="Python.Main (1)" />
-        <item itemvalue="Python.Main" />
-        <item itemvalue="Python.Coder" />
+        <item itemvalue="Python.Main (3)" />
+        <item itemvalue="Python.Window" />
+        <item itemvalue="Python.untitled" />
+        <item itemvalue="Python.GUI" />
+        <item itemvalue="Python.Plots" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +217,42 @@
       <option name="project" value="LOCAL" />
       <updated>1620167133635</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="analiza statystyczna">
+      <created>1620307062990</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620307062990</updated>
+    </task>
+    <task id="LOCAL-00003" summary="analiza statystyczna wykresy">
+      <created>1620307092489</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620307092489</updated>
+    </task>
+    <task id="LOCAL-00004" summary="nowe wykresy">
+      <created>1620319436401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620319436401</updated>
+    </task>
+    <task id="LOCAL-00005" summary="nowe wykresy 2">
+      <created>1620322071818</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620322071818</updated>
+    </task>
+    <task id="LOCAL-00006" summary="nowe wykresy 3">
+      <created>1620331310128</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620331310128</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,60 +281,95 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="działający przykład przy użyciu libki 'komm'" />
-    <option name="LAST_COMMIT_MESSAGE" value="działający przykład przy użyciu libki 'komm'" />
+    <MESSAGE value="analiza statystyczna" />
+    <MESSAGE value="analiza statystyczna wykresy" />
+    <MESSAGE value="nowe wykresy" />
+    <MESSAGE value="nowe wykresy 2" />
+    <MESSAGE value="nowe wykresy 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="nowe wykresy 3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1619988533497">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="752" y="378" key="#Scopes" timestamp="1621695827887">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="752" y="378" key="#Scopes/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621695827887" />
+    <state x="728" y="350" key="#com.intellij.tools.ToolEditorDialog" timestamp="1621696407006">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="728" y="350" key="#com.intellij.tools.ToolEditorDialog/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621696407006" />
+    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1621696367941">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="686" y="211" key="FileChooserDialogImpl/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621696367941" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619988533497" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1620306130857">
+    <state width="1899" height="280" key="GridCell.Tab.0.bottom" timestamp="1621711057832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620306130857" />
+    <state width="1899" height="280" key="GridCell.Tab.0.bottom/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621711057832" />
     <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620167200455" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1620306130856">
+    <state width="1899" height="280" key="GridCell.Tab.0.center" timestamp="1621711057832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.center/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620306130856" />
+    <state width="1899" height="280" key="GridCell.Tab.0.center/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621711057832" />
     <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620167200440" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1620306130856">
+    <state width="1899" height="280" key="GridCell.Tab.0.left" timestamp="1621711057832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.left/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620306130856" />
+    <state width="1899" height="280" key="GridCell.Tab.0.left/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621711057832" />
     <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620167200440" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1620306130857">
+    <state width="1899" height="280" key="GridCell.Tab.0.right" timestamp="1621711057832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.right/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620306130857" />
+    <state width="1899" height="280" key="GridCell.Tab.0.right/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621711057832" />
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620167200455" />
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1620301337520">
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom" timestamp="1621710184058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.bottom/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620301337520" />
+    <state width="1899" height="347" key="GridCell.Tab.1.bottom/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621710184058" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619988534473" />
-    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1620301337520">
+    <state width="1899" height="347" key="GridCell.Tab.1.center" timestamp="1621710184058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.center/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620301337520" />
+    <state width="1899" height="347" key="GridCell.Tab.1.center/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621710184058" />
     <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1619988534473" />
-    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1620301337519">
+    <state width="1899" height="347" key="GridCell.Tab.1.left" timestamp="1621710184058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.left/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620301337519" />
+    <state width="1899" height="347" key="GridCell.Tab.1.left/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621710184058" />
     <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1619988534473" />
-    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1620301337520">
+    <state width="1899" height="347" key="GridCell.Tab.1.right" timestamp="1621710184058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="347" key="GridCell.Tab.1.right/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620301337520" />
+    <state width="1899" height="347" key="GridCell.Tab.1.right/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621710184058" />
     <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1619988534473" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1620167135874">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1621696411076">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="461" y="165" key="SettingsEditor/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1621696411076" />
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2" timestamp="1620331313509">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="451" y="183" key="Vcs.Push.Dialog.v2/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620331313509" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1620167135874" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1620287011123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.-523.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1620287011123" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Etap2/Main.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Etap3/Main.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

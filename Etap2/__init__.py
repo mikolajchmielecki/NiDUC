@@ -1,1 +1,1 @@
-__all__ = ["Main", "BCH_Parameters", "Simulation", "Plot"]
+__all__ = ["Main", "BCH_Parameters", "BCH_Simulation", "Plot", "TripleBitsSimulation"]

@@ -7,13 +7,14 @@ from Etap1 import Generator
 Klasa odpowiada za sumulacje przeprowadzaną za pomocą kodowania BCH
 Z zadanymi parametrami wejściowymi oraz prawdopodobieństem przekłamania 
 """
-class Simulation:
+class BCH_Simulation:
     def __init__(self, m, t):
         self.coder = BCHCode(m, t)
         self.m = m                      # rządz BCH
         self.n = self.coder.length      # liczba danych + dane nadmiarowe
         self.k = self.coder.dimension   # liczba danych
         self.t = t                      # zdolność korekcyjna
+        self.info = f"BCH simulation - m = {m}; n = {self.n}; k = {self.k}; t = {t};"
 
 
     """
