@@ -11,6 +11,16 @@ from Etap3.Tests import *
 from Etap3.Plots import *
 from Etap3.Window import *
 from Etap3.Logging import *
+from os import environ
+
+"""
+Wyłącza ostrzeżenia PyQT
+"""
+def suppress_qt_warnings():
+    environ["QT_DEVICE_PIXEL_RATIO"] = "0"
+    environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = "1"
+    environ["QT_SCREEN_SCALE_FACTORS"] = "1"
+    environ["QT_SCALE_FACTOR"] = "1"
 
 coders = []
 coders.append(TripleCoder(20, True))
@@ -35,10 +45,6 @@ coders.append(BCHCoder(6, 10))
 coders.append(BCHCoder(6, 11))
 coders.append(BCHCoder(6, 13))
 coders.append(BCHCoder(6, 15))
-
-
-
-
 
 
 """
@@ -71,17 +77,11 @@ def run(MainWindow, ui, logger):
     runLongTask(MainWindow, logger, msg, channel, tests)
 
 
-
-
-
-
 """
 Wyświetla okienko
 """
 if __name__ == "__main__":
-    import sys
-
-
+    suppress_qt_warnings()
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     MainWindow.isBusy = False
