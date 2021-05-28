@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import mplcursors
-
+import numpy as np
 
 
 
@@ -20,30 +20,42 @@ def plot_BER_E(results, channel, msg):
 
     plt.scatter([1], [0], label='Przypadek idealny', marker='*')
 
+    # wyznaczanie zbioru Pareto
 
-    # sortowanie wyników po odległości Euklidesowej od przypadku idealnego (1,0)
-    results = sorted(results, key=lambda result: ((result[1]-0)**2+(result[2]-1)**2))
+    # początkowo uznajemy, że wszystkie rozwiązania są w zbiorze Pareto
+    pareto = np.ones(len(results), dtype=bool)
 
-    # minimalna odleglosc od przypadku idealnego
-    _, min_BER, min_E = results[0]
-    min_d = (min_BER-0)**2+(min_E-1)**2
+    # algorytm przechodzi przez wszystkie rezultaty, które nie zostały jeszcze zdominowane
+    # dla wybranego resultatu sprawdza czy dominuje ono pozostałe rozwiązania
+    for i in range(len(results)):
+        _, BER, E = results[i]
+        # czy aktualny wynik jest niezdominowany
+        if pareto[i]:
+            # sprawdzanie zbominowania
+            for j in range(len(results)):
+                _, BER1, E1 = results[j]
+                # sprawdzanie zdominowania
+                if results[i] != results[j] and (BER1 >= BER and E1 < E) or (BER1 > BER and E1 <= E):
+                    pareto[j] = False
 
     # rysowanie wyników
+    i = 0
     for result in results:
         coder, BER, E = result
-        d = (BER-0)**2+(E-1)**2
 
-        if d - min_d > 0.05:
-            plt.scatter([E], [BER], label=str(coder))
-        else:
+        if pareto[i]:
             plt.scatter([E], [BER], label=str(coder), marker='*')
+        else:
+            plt.scatter([E], [BER], label=str(coder))
+
+        i += 1
 
 
     # wyświetlanie wykresu
     plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     plt.gca().set_aspect('equal', adjustable='box')
     plt.tight_layout()
-
+    plt.gca().invert_xaxis()
     fig = plt.gcf()
     mplcursors.cursor(hover=True)
     try:
