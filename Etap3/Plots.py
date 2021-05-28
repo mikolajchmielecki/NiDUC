@@ -18,7 +18,7 @@ def plot_BER_E(results, channel, msg):
     plt.xlabel('E - efektywność')
     plt.ylabel('BER - stopa błędów')
 
-    plt.scatter([1], [0], label='Przypadek idealny', marker='*')
+    plt.scatter([1], [0], label='Przypadek idealny', marker='*', s=20)
 
     # wyznaczanie zbioru Pareto
 
@@ -44,9 +44,9 @@ def plot_BER_E(results, channel, msg):
         coder, BER, E = result
 
         if pareto[i]:
-            plt.scatter([E], [BER], label=str(coder), marker='*')
+            plt.scatter([E], [BER], label=str(coder), marker='*', s=20)
         else:
-            plt.scatter([E], [BER], label=str(coder))
+            plt.scatter([E], [BER], label=str(coder), s=10)
 
         i += 1
 
