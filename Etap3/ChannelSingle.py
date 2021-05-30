@@ -5,7 +5,7 @@ class ChannelSingle:
         self.probability = probability
 
     def __str__(self):
-        return f'Błędy pojedyncze p = {self.probability}'
+        return f'Błędy pojedyncze p = {round(self.probability, 2)}'
 
     """
     Metoda mająca dany strumień bitów wejściowych przekształca je na strumień bitów wyjściowych z przekłamaniami
