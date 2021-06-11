@@ -44,7 +44,7 @@ def plot_BER_E(results, channel, msg):
         coder, BER, E = result
 
         if pareto[i]:
-            plt.scatter([E], [BER], label=str(coder), marker='*', s=20)
+            plt.scatter([E], [BER], label=str(coder), marker='*', s=50)
         else:
             plt.scatter([E], [BER], label=str(coder), s=10)
 
@@ -59,7 +59,7 @@ def plot_BER_E(results, channel, msg):
     fig = plt.gcf()
     mplcursors.cursor(hover=True)
     try:
-        fig.savefig('plot.png', bbox_inches='tight')
+        fig.savefig('plot.png', bbox_inches='tight', dpi=1000)
     except Exception:
         # print('[ERROR] Nie można zapisać wykresu')
         pass
